@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:text="CONGRATULATIONS"
+       android:textSize="36sp"
+       android:layout_marginLeft="16dp"
+       android:layout_marginTop="16dp"
+       android:layout_marginBottom="16dp"
+       android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="360dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/easyScore"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Easy score:0"
+            android:textColor="#0277BD"
+            android:textSize="36sp"/>
+
+        <TextView
+            android:id="@+id/easyMisstakes"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Easy misstakes:0"
+            android:textColor="#0277BD"
+            android:textSize="36sp"/>
+
+        <TextView
+            android:id="@+id/mediumScore"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Medium score:0"
+            android:textColor="#0277BD"
+            android:textSize="36sp"/>
+
+        <TextView
+            android:id="@+id/mediumMisstakes"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Medium misstakes:0"
+            android:textColor="#0277BD"
+            android:textSize="32sp"/>
+
+        <TextView
+            android:id="@+id/hardScore"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Hard score:0"
+            android:textColor="#0277BD"
+            android:textSize="36sp"/>
+
+        <TextView
+            android:id="@+id/hardMisstakes"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Hard misstakes:0"
+            android:textColor="#0277BD"
+            android:textSize="36sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Summary"
+            android:onClick="summary"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout> <!-- Summary -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:text="Try again"
+        android:layout_margin="16dp"
+        android:onClick="tryAgain"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+</LinearLayout> <!-- Try again button -->
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

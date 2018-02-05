@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/udacity"
+    android:scaleType="centerCrop">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="Welcome to the Medium android developer quizz!"
+                android:textSize="28sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"/>  <!-- Header -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:src="@drawable/cartoonbeach"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Extentions for drawable"
+                        android:textColor="#000000"
+                        android:textSize="18dp"/>
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="vertical">
+                        <RadioButton android:id="@+id/mq1a1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="gif"
+                            android:onClick="onRadioButtonClickedMQ1"/>
+                        <RadioButton android:id="@+id/mq1a2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="xlsm"
+                            android:onClick="onRadioButtonClickedMQ1"/>
+                        <RadioButton android:id="@+id/mq1a3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="anm"
+                            android:onClick="onRadioButtonClickedMQ1"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Hint"/>
+                </LinearLayout>
+            </LinearLayout>  <!--Question 1 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:src="@drawable/cartoonbeach"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gets text imput"
+                        android:textColor="#000000"
+                        android:textSize="18dp"/>
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="vertical">
+                        <RadioButton android:id="@+id/mq2a1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RadioButton"
+                            android:onClick="onRadioButtonClickedMQ2"/>
+                        <RadioButton android:id="@+id/mq2a2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TextView"
+                            android:onClick="onRadioButtonClickedMQ2"/>
+                        <RadioButton android:id="@+id/mq2a3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EditText"
+                            android:onClick="onRadioButtonClickedMQ2"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Hint"/>
+                </LinearLayout>
+            </LinearLayout>   <!--Question 2 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:src="@drawable/cartoonbeach"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tests a condition in java"
+                        android:textColor="#000000"
+                        android:textSize="18dp"/>
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="vertical">
+                        <RadioButton android:id="@+id/mq3a1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="For"
+                            android:onClick="onRadioButtonClickedMQ3"/>
+                        <RadioButton android:id="@+id/mq3a2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="If"
+                            android:onClick="onRadioButtonClickedMQ3"/>
+                        <RadioButton android:id="@+id/mq3a3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Random"
+                            android:onClick="onRadioButtonClickedMQ3"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Hint"/>
+                </LinearLayout>
+            </LinearLayout>   <!--Question 3 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:src="@drawable/cartoonbeach"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lets you chose from more options"
+                        android:textColor="#000000"
+                        android:textSize="18dp"/>
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="vertical">
+                        <RadioButton android:id="@+id/mq4a1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CheckBox"
+                            android:onClick="onRadioButtonClickedMQ4"/>
+                        <RadioButton android:id="@+id/mq4a2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Button"
+                            android:onClick="onRadioButtonClickedMQ4"/>
+                        <RadioButton android:id="@+id/mq4a3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Spinner"
+                            android:onClick="onRadioButtonClickedMQ4"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Hint"/>
+                </LinearLayout>
+            </LinearLayout>   <!--Question 4 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:src="@drawable/cartoonbeach"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Changes screens (java comand)"
+                        android:textColor="#000000"
+                        android:textSize="18dp"/>
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="vertical">
+                        <RadioButton android:id="@+id/mq5a1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="findViewById"
+                            android:onClick="onRadioButtonClickedMQ5"/>
+                        <RadioButton android:id="@+id/mq5a2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="setContentView"
+                            android:onClick="onRadioButtonClickedMQ5"/>
+                        <RadioButton android:id="@+id/mq5a3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View view"
+                            android:onClick="onRadioButtonClickedMQ5"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Hint"/>
+                </LinearLayout>
+            </LinearLayout>   <!--Question 5 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:padding="32dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:text="Done"
+                    android:textSize="24sp"
+                    android:onClick="toSummary"
+                    android:layout_weight="2"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:text="Back"
+                    android:textSize="24sp"
+                    android:onClick="toMain"
+                    android:layout_weight="2"/>
+
+            </LinearLayout>  <!-- Finish -->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

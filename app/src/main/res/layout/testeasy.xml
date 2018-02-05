@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/udacity"
+    android:scaleType="centerCrop">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="Welcome to the Easy android developer quizz!"
+                android:textColor="#000000"
+                android:textSize="28sp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"/> <!-- Header -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:text="Where are the Layouts"
+                  android:textColor="#000000"
+                  android:textSize="32sp"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/eq1a1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Drawable folder"
+                        android:onClick="onRadioButtonClickedEQ1"
+                        android:layout_weight="1"/>
+                    <RadioButton android:id="@+id/eq1a2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="activity_main.xml"
+                        android:onClick="onRadioButtonClickedEQ1"
+                        android:layout_weight="1"/>
+                </RadioGroup>
+
+            </LinearLayout> <!-- Question 1 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Asociate java to button"
+                    android:textColor="#000000"
+                    android:textSize="32sp"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/eq2a1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onRadioButtonClickedEQ2"
+                        android:text="using onClick" />
+
+                    <RadioButton
+                        android:id="@+id/eq2a2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:onClick="onRadioButtonClickedEQ2"
+                        android:text="using onTap" />
+                </RadioGroup>
+
+            </LinearLayout> <!-- Question 2 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Pictures are stored in"
+                    android:textColor="#000000"
+                    android:textSize="32sp"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/eq3a1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="MainActivity.java"
+                        android:onClick="onRadioButtonClickedEQ3"
+                        android:layout_weight="1"/>
+                    <RadioButton android:id="@+id/eq3a2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Drawable folder"
+                        android:onClick="onRadioButtonClickedEQ3"
+                        android:layout_weight="1"/>
+                </RadioGroup>
+
+            </LinearLayout> <!-- Question 3-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="How to scale a picture"
+                    android:textColor="#000000"
+                    android:textSize="32sp"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/eq4a1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="using scaleShape"
+                        android:onClick="onRadioButtonClickedEQ4"
+                        android:layout_weight="1"/>
+                    <RadioButton android:id="@+id/eq4a2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="using scaleType"
+                        android:onClick="onRadioButtonClickedEQ4"
+                        android:layout_weight="1"/>
+                </RadioGroup>
+
+            </LinearLayout> <!-- Question 4-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="What layout can overlay"
+                    android:textColor="#000000"
+                    android:textSize="32sp"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/eq5a1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="RelativeLayout"
+                        android:onClick="onRadioButtonClickedEQ5"
+                        android:layout_weight="1"/>
+                    <RadioButton android:id="@+id/eq5a2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="LinearLayout"
+                        android:onClick="onRadioButtonClickedEQ5"
+                        android:layout_weight="1"/>
+                </RadioGroup>
+
+            </LinearLayout> <!-- Question 5-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:padding="32dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:text="Done"
+                    android:textSize="24sp"
+                    android:onClick="toSummary"
+                    android:layout_weight="2"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:text="Back"
+                    android:textSize="24sp"
+                    android:onClick="toMain"
+                    android:layout_weight="2"/>
+
+            </LinearLayout>  <!-- Finish -->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
